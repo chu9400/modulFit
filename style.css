@@ -137,19 +137,16 @@ table {
     margin-top: 60px;
 }
 
-
 .header_text_btn span{
     border: 1px solid;
     padding: 20px 70px;
     border-radius: 70px;
 }
 
-
-    
-
-
 .header_slide {
     padding: 20px;
+    bottom: 60px;
+    position: relative;
 }
 
 
@@ -176,22 +173,10 @@ table {
     left: -190px;
 }
 
-.slider__arrow .left_num {
-    position: relative;
-    left: -190px;
-}
-
-
 .slider__arrow a.right {
     position: relative;
     right: -110px;
 }
-
-.slider__arrow .right_num {
-    position: relative;
-    right: -50px;
-}
-
 
 .slider__bar {
     display: flex;
@@ -238,4 +223,55 @@ table {
     font-size: 24px;
     padding: 20px;
     line-height: 40px;
+}
+
+
+/* section_02 */
+.section_02 {
+    width: 100%;
+    max-width: 1980px;
+    height: 1280px;
+    background-color: #999;    
+}
+
+.scroll_header {
+    width: 100%;
+    font-size: 48px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    padding-top: 10%;
+}
+
+.scroll_header_left {
+
+}
+
+.scroll_header_right {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+
+.scroll_body {
+    overflow: hidden;
+    position: relative;
+    left: 16%;
+}
+.scroll_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 7000px;
+}
+
+.scroll_item {
+    width: 100%;
+    max-width: 630px;
+    height: 620px;
+    margin-right: 20px;
 }
