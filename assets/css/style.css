@@ -1,4 +1,12 @@
-/* main code */
+/* main code*/
+
+/* body */
+body {
+    overflow-x: hidden
+}
+/* body - end*/
+
+
 /* header */
 .header {
     position: relative;
