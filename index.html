@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ModeulFit 소개 사이트입니다."/>
     <meta name="keyword" content="ModeulFit, ModeulFit 소개" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>ModeulFit</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
@@ -28,8 +29,12 @@
             <div class="header_menu">
                 <p>logo</p>
                 <ul>
-                    <li>회사소개</li>
-                    <li>제작소개</li>
+                    <li>
+                        <a href="/about/us">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="/about/produce">제작소개</a>
+                    </li>
                     <li>문의하기</li>
                 </ul>
                 <p>KOR</p>
@@ -45,13 +50,13 @@
                 <div class="slider__arrow">
                     <a href="#" class="left">
                         <span class="ir">
-                            <img src="/img/left_btn.svg" alt="left_btn">
+                            <img src="/assets/img/left_btn.svg" alt="left_btn">
                         </span>
                     </a>
 
                     <a href="#" class="right">
                         <span class="ir">
-                            <img src="/img/right_btn.svg" alt="right_btn">
+                            <img src="/assets/img/right_btn.svg" alt="right_btn">
                         </span>
                     </a>
                     
@@ -137,14 +142,20 @@
     </main>
 
 
+
+
     <!-- 슬라이드 -->
-    <script src="slide.js"></script>
+    <script src="/assets/js/slide.js"></script>
 
     <!-- 스크롤 애니메이션 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
-    <script src="scroll.js"></script>
+    <script src="/assets/js/scroll.js"></script>
+
+    <!-- 기본 js 설정 -->
+    <script src="/assets/js/common.js"></script>
+
 
 </body>
 </html>

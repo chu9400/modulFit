@@ -1,50 +1,5 @@
-/* reset code */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
 /* main code */
+/* header */
 .header {
     position: relative;
     width: 100%;
@@ -95,7 +50,6 @@ table {
     max-width: 1280px;
     height: 84px;
     margin: 0 auto;
-    /* background-color: #333; */
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -190,15 +144,30 @@ table {
     background-color: white;
     margin: 0px;
     transition: height 0.3s ease;
+    position: relative; /* 자식 요소 위치 조정을 위해 상대 위치 지정 */
 }
+
+
+/* 클릭 영역 확장 */
+.slider__bar .bar::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* 클릭 영역 확장 높이 */
+    bottom: -10px; /* 클릭 영역 확장 높이 */
+    left: -10px; /* 클릭 영역 확장 너비 */
+    right: -10px; /* 클릭 영역 확장 너비 */
+    background: transparent; /* 배경색을 투명으로 설정하여 보이지 않도록 함 */
+    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 표시 */
+}
+
 
 .slider__bar .bar.active {
     background-color: gray;
 }
+/* header - end */
 
 
 /* section_01 */
-
 .section_01 {
     width: 100%;
     max-width: 1980px;
@@ -225,6 +194,7 @@ table {
     line-height: 40px;
 }
 
+/* section_01 - end*/
 
 /* section_02 */
 .section_02 {
@@ -275,3 +245,36 @@ table {
     height: 620px;
     margin-right: 20px;
 }
+
+/* section_02 - end */
+
+
+/* section_03 */
+
+
+
+/* section_03 - end */
+
+
+
+
+/* section_04 */
+/* section_04 - end */
+
+
+
+
+/* section_05 */
+/* section_05 - end */
+
+
+
+
+/* section_06 */
+/* section_06 - end */
+
+
+
+
+/* section_07 */
+/* section_07 - end */
