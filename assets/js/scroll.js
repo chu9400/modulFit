@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
         xPercent: -120 * (horSection.length - 1),
         ease: "none",
         scrollTrigger: {
-            trigger: "#section_02",
+            trigger: "#scroll_section",
             start: "top 0px",
             end: "+=3000",
             pin: true,

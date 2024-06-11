@@ -18,12 +18,12 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    filter: brightness(40%);
+    filter: brightness(35%);
 }
 
 .slide {
     display: flex;
-    width: 300%;
+    width: 600%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
 }
@@ -132,12 +132,12 @@ body {
 
 .slider__arrow a.left {
     position: relative;
-    left: -190px;
+    left: -270px;
 }
 
 .slider__arrow a.right {
     position: relative;
-    right: -110px;
+    right: -205px;
 }
 
 .slider__bar {
@@ -175,37 +175,209 @@ body {
 /* header - end */
 
 
-/* section_01 */
-.section_01 {
+/* site_title */
+.site_title {
     width: 100%;
     max-width: 1980px;
-    height: 495px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
 }
 
-.section_01 div {
+.site_title div {
     padding: 100px 50px;
 }
 
-.section_01 div p{
+.site_title div span{
+    font-size: 15px;
     color: #7C5C1C;
-    font-size: 48px;
     font-weight: 700;
     padding: 20px;
 }
-.section_01 div span{
-    font-size: 24px;
+
+.site_title div h2{
+    font-size: 40px;
+    font-weight: 700;
     padding: 20px;
-    line-height: 40px;
+    
 }
 
-/* section_01 - end*/
+.site_title div p{
+    font-size: 18px;
+    line-height: 32px;
+}
 
-/* section_02 */
-.section_02 {
+
+
+/* site_title - end */
+
+
+/* site_desc */
+.site_desc {
+    width: 100%;
+    max-width: 1980px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.desc_wrap {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.desc_wrap.reverse {
+    flex-direction: row-reverse;
+}
+
+.desc_wrap .desc_text_wrap {
+    width: 50%; 
+    background: whitesmoke;
+    padding: 200px 0; 
+}
+
+.desc_wrap .desc_text_wrap .desc_text {
+    width: 100%;
+    max-width: 623px;
+    margin: 0 auto;
+}
+
+.desc_wrap .desc_text_wrap .desc_text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    padding: 20px 0;
+}
+
+.desc_wrap .desc_text_wrap .desc_text span {
+    font-size: 18px;
+    line-height: 32px;
+    padding: 20px 0;
+}
+
+
+.desc_wrap .desc_img_wrap {
+    width: 50%;
+}
+
+.desc_wrap .desc_img_wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+}
+
+
+/* site_desc - end */
+
+
+/* instagram */
+
+.instagram {
+    width: 100%;
+    max-width: 1980px;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("/assets/img/instagram/instagram_bg.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.instagram::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 0;
+}
+
+
+.instagram_inner {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 150px 0;
+    z-index: 1;
+}
+
+.instagram_inner h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 58px;
+    padding-bottom: 20px;
+}
+
+.instagram_inner .instagram_slider {
+    overflow: hidden; /* 슬라이더 영역을 숨깁니다 */
+    max-width: 1300px; /* 최대 너비를 설정합니다 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.instagram_inner .instagram_slider .instagram_img_wrap {
+    width: 100%;
+    max-width: 1300px;
+    height: 413px;
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* 애니메이션 효과를 추가합니다 */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.instagram_inner .instagram_slider .instagram_img_wrap li {
+    min-width: 33.333%; /* 한 화면에 3개씩 보이도록 */
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+
+
+
+.instagram_inner .instagram_arrow {
+    
+}
+
+
+.instagram_inner .instagram_arrow .instagram-link {
+    position: absolute;
+    top: 54%;
+}
+
+
+.instagram_inner .instagram_arrow .instagram_arrow_left{
+    left: 13%;
+}
+
+.instagram_inner .instagram_arrow .instagram_arrow_right{
+    right: 13%;
+    transform: rotate(180deg);    
+}
+/* 
+.instagram_inner .instagram_arrow .instagram_arrow_right img{
+    transform: rotate(180deg);    
+} */
+
+
+
+
+
+/* instagram - end */
+
+
+
+/* scroll_section */
+/* 
+.scroll_section {
     width: 100%;
     max-width: 1980px;
     height: 1280px;
@@ -252,37 +424,8 @@ body {
     max-width: 630px;
     height: 620px;
     margin-right: 20px;
-}
-
-/* section_02 - end */
-
-
-/* section_03 */
+} 
+*/
+/* scroll_section - end */
 
 
-
-/* section_03 - end */
-
-
-
-
-/* section_04 */
-/* section_04 - end */
-
-
-
-
-/* section_05 */
-/* section_05 - end */
-
-
-
-
-/* section_06 */
-/* section_06 - end */
-
-
-
-
-/* section_07 */
-/* section_07 - end */
