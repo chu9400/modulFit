@@ -38,24 +38,25 @@
         </div>
         <div class="header_content">
             <div class="header_menu">
-                <p>logo</p>
+                <a href="/" class="header-logo">
+                    <img src="/assets/img/logo.svg" alt="logo">
+                </a>
                 <ul>
                     <li>
                         <a href="/about/us">회사소개</a>
                     </li>
                     <li>
-                        <a href="/about/produce">제작소개</a>
+                        <a href="/about/contact">문의하기</a>
                     </li>
-                    <li>문의하기</li>
                 </ul>
                 <p>KOR</p>
             </div>
             <div class="header_text">
-                <p class="header_text_title">맞춤형 의류패턴 모듈러</p>
-                <p class="header_text_desc">누구나 패턴설계를 보다 쉽고 재미있게 구현이 가능합니다.</p>
-                <p class="header_text_btn">
-                    <span>회사 소개</span>
-                </p>
+                <p class="header_text_title">모듈핏, 새로운 미래를 향한 열정</p>
+                <p class="header_text_desc">모듈핏(ModulFit)은 패션 산업과 공방 창업에 흥미를 느끼는 분들을 위한 플랫폼입니다.</p>
+                <div class="header_text_btn">
+                    <p>회사 소개</p>
+                </div>
             </div>
             <div class="header_slide">
                 <div class="slider__arrow">
@@ -84,7 +85,7 @@
         </div>
     </header>
     <main>
-        <section id="site_title" class="site_title">
+        <section id="hero_section" class="hero_section">
             <div>
                 <span>Custom Clothing Pattern</span>
                 <h2>코코파, 패턴 제작의 시작</h2>
@@ -96,7 +97,7 @@
             </div>
         </section>
 
-        <section id="site_desc" class="site_desc">
+        <section id="about_us" class="about_us">
 
             <div class="desc_wrap">
                 <div class="desc_text_wrap">
@@ -173,7 +174,43 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact" class="contact">
+
+            <div class="contact_wrap">
+                <div class="contact_left">
+                    <h2>문의하기</h2>
+                    <p>
+                        모듈핏에 관해 궁금하신 내용을 편하게 문의해 주시면 <br />
+                        빠른 시일 내에 연락드리겠습니다.
+                    </p>
+                </div>
+
+                <div class="contact_right">
+                    <form action="/contact" method="POST">
+                        <ul>
+                            <li><input type="text" class="input_name" name="input_name" placeholder="이름*" required /></li>
+                            <li><input type="text" class="input_email" name="input_email" placeholder="이메일 주소**" required /></li>
+                            <li><input type="text" class="input_company" name="input_company" placeholder="회사명" /></li>
+                            <li><input type="number" class="input_phone" name="input_phone" placeholder="휴대전화번호 (ex_01012345678)*" required /></li>
+                            <li><textarea class="input_message" name="input_message" placeholder="문의 사항"></textarea></li>
+                            <li><button type="submit">문의하기</button></li>
+                        </ul>
+                    </form>                    
+                </div>
+            </div>
+
+        </section>
         
+        <section id="brand_vision" class="brand_vision">
+                <div>
+                    <h2>Custom Clothing Pattern</h2>
+                    <p>
+                        우리는 소비자와의 소통을 중시하며, 교육과 지원을 통해 사람들의 자기 발전을 돕고, 
+                        사회적 책임을 다하는 브랜드입니다
+                    </p>
+                </div>
+        </section>
 
         <!-- 가로 스크롤 코드
         <section id="scroll_section" class="scroll_section">
@@ -233,6 +270,33 @@
     -->
         
     </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li class="footer-logo"><img src="/assets/img/logo.svg" alt="logo"></li>
+                <li class="footer-links">
+                    <p><a href="#">사업자정보확인</a></p>
+                    <p><a href="#">개인정보처리방침</a></p>
+                    <p><a href="#">이메일무단수집거부</a></p>
+                    <p><a href="#">문의하기</a></p>
+                </li>
+                <li class="footer-company-info">
+                    <p class="company_ceo">대표이사 : 김수정</p>
+                    <p class="company_registration_number">사업자등록번호 : 000-00-00000</p>
+                    <p class="company_address">주소 : 경상북도 영주시 영주동</p>
+                </li>
+                <li class="footer-contact">
+                    <p class="company_number">대표번호 : 054-632-1888</p>
+                    <p class="company_fax">FAX : 054-631-3717</p>
+                    <p class="company_email">이메일 : cocofa@naver.com</p>
+                </li>
+                <li class="footer-copyright">
+                    <p>ⓒ 2024 MODULEFIT All Rights Reserved</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
 
 
