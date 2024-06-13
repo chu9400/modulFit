@@ -19,9 +19,9 @@ app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html');
 });
 
-// app.get('/about/us', (request, response) => {
-//     response.send("회사 소개 페이지 예정");
-// });
+app.get('/about', (request, response) => {
+    response.send("회사 소개 페이지 예정");
+});
 
 
 // 문의하기 기능
@@ -55,7 +55,7 @@ app.post('/contact', (request, response) => {
             console.log(error);
             response.status(500).send('Error : 문의를 보내지 못했습니다.');
         } else {
-            response.sendFile(__dirname + '/index.html');
+            response.redirect('/');
         }
     });
 });

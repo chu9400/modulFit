@@ -31,12 +31,12 @@
 
 5. 애플리케이션을 실행합니다.
 ```
-    nodemon server.js
+    nodemon web.js
 ```
 
 6. 브라우저에서 로컬 호스트 경로로 이동합니다.
 ```
-    http://localhost:8080
+    http://localhost:8001
 ```
 
 

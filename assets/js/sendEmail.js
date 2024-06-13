@@ -62,7 +62,8 @@ document.querySelector('#sendEmail').addEventListener('submit', function(event) 
     input_message.value = sanitize(input_message.value);
     input_company.value = sanitize(input_company.value);
 
-    alert("고객님의 문의가 등록 되었습니다. 빠른 시일내에 답변 드리도록 하겠습니다.");
+    alert("고객님의 문의가 성공적으로 등록 되었습니다.\n빠른 시일내에 답변 드리겠습니다.");
+
     // 폼 제출
     this.submit();
 });
