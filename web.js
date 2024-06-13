@@ -11,8 +11,8 @@ app.use(express.static(__dirname));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.listen(8080, () => {
-    console.log('http://localhost:8080 서버 실행중');
+app.listen(8001, () => {
+    console.log('http://localhost:8001 서버 실행중');
 });
 
 app.get('/', (request, response) => {
