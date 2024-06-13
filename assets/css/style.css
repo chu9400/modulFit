@@ -75,6 +75,11 @@ body {
     align-items: center;
 }
 
+.header_menu a{
+    color: white;
+
+}
+
 
 .header_menu ul {
     display: flex;
