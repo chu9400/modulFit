@@ -15,7 +15,6 @@
         <div class="header_img">
             <div class="slide">
                 <div class="slide_img">
-                    <!-- <img src="https://placehold.co/1980x1080" alt="헤더이미지 1"> -->
                     <img src="/assets/img/header/bg_img_00.gif" alt="헤더이미지 00">
                 </div>
                 <div class="slide_img">
@@ -43,32 +42,32 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="/about/us">회사소개</a>
+                        <a href="#">회사소개</a>
                     </li>
                     <li>
-                        <a href="/about/contact">문의하기</a>
+                        <a href="#">문의하기</a>
                     </li>
                 </ul>
-                <p>KOR</p>
+                <p style="opacity: 0;">KOR</p>
             </div>
             <div class="header_text">
                 <p class="header_text_title">모듈핏, 새로운 미래를 향한 열정</p>
                 <p class="header_text_desc">모듈핏(ModulFit)은 패션 산업과 공방 창업에 흥미를 느끼는 분들을 위한 플랫폼입니다.</p>
                 <div class="header_text_btn">
-                    <p>회사 소개</p>
+                    <a href="#">회사 소개</a>
                 </div>
             </div>
             <div class="header_slide">
                 <div class="slider__arrow">
                     <a href="#" class="arrow-link left">
                         <span class="ir">
-                            <img src="/assets/img/left_btn.svg" alt="left_btn">
+                            <img src="/assets/img/header/arrow_btn.svg" alt="left_btn">
                         </span>
                     </a>
 
                     <a href="#" class="arrow-link right">
                         <span class="ir">
-                            <img src="/assets/img/right_btn.svg" alt="right_btn">
+                            <img src="/assets/img/header/arrow_btn.svg" alt="right_btn">
                         </span>
                     </a>
                     
@@ -84,11 +83,12 @@
             </div>
         </div>
     </header>
+    
     <main>
         <section id="hero_section" class="hero_section">
             <div>
                 <span>Custom Clothing Pattern</span>
-                <h2>코코파, 패턴 제작의 시작</h2>
+                <h2>"우리는 패션의 미래를 위해 노력합니다. 코코파와 함께하세요."</h2>
                 <p>
                     모듈핏(ModulFit)은 패션 산업과 공방 창업에 흥미를 느끼는 분들을 위한 <br />
                     플랫폼입니다. 우리는 소비자와의 소통을 중시하며, 교육과 지원을 통해 <br /> 
@@ -101,7 +101,7 @@
 
             <div class="desc_wrap">
                 <div class="desc_text_wrap">
-                    <div class="desc_text">
+                    <div class="desc_text desc_text_01">
                         <h2>
                             패션 디자인 교육 분야에서 <br />
                             선두주자로 활동하고 있습니다.
@@ -122,7 +122,7 @@
             
             <div class="desc_wrap reverse">
                 <div class="desc_text_wrap">
-                    <div class="desc_text">
+                    <div class="desc_text desc_text_02">
                         <h2>
                             누구나 쉽고 빠르게 패턴 제작을 <br />
                             배울 수 있게 돕습니다.
@@ -187,27 +187,26 @@
                 </div>
 
                 <div class="contact_right">
-                    <form action="/contact" method="POST">
+                    <form action="/contact" method="POST" id="sendEmail" class="sendEmail">
                         <ul>
                             <li><input type="text" class="input_name" name="input_name" placeholder="이름*" required /></li>
-                            <li><input type="text" class="input_email" name="input_email" placeholder="이메일 주소**" required /></li>
+                            <li><input type="text" class="input_email" name="input_email" placeholder="이메일 주소*" required /></li>
                             <li><input type="text" class="input_company" name="input_company" placeholder="회사명" /></li>
-                            <li><input type="number" class="input_phone" name="input_phone" placeholder="휴대전화번호 (ex_01012345678)*" required /></li>
+                            <li><input type="text" class="input_phone" name="input_phone" placeholder="휴대전화번호 (ex_01012345678)*" required /></li>
                             <li><textarea class="input_message" name="input_message" placeholder="문의 사항"></textarea></li>
                             <li><button type="submit">문의하기</button></li>
                         </ul>
                     </form>                    
                 </div>
             </div>
-
         </section>
         
         <section id="brand_vision" class="brand_vision">
                 <div>
-                    <h2>Custom Clothing Pattern</h2>
+                    <h2>코코파: 패션의 미래를 위한 열정</h2>
                     <p>
-                        우리는 소비자와의 소통을 중시하며, 교육과 지원을 통해 사람들의 자기 발전을 돕고, 
-                        사회적 책임을 다하는 브랜드입니다
+                        우리는 소비자와의 소통을 중시하며, 교육과 지원을 통해 <br />
+                        사람들의 자기 발전을 돕고, 사회적 책임을 다하는 브랜드입니다.
                     </p>
                 </div>
         </section>
@@ -274,7 +273,10 @@
     <footer>
         <div>
             <ul>
-                <li class="footer-logo"><img src="/assets/img/logo.svg" alt="logo"></li>
+                <li class="footer-logo">
+                    <img src="/assets/img/logo.svg" alt="logo">
+                    <span>코코파주식회사</span>
+                </li>
                 <li class="footer-links">
                     <p><a href="#">사업자정보확인</a></p>
                     <p><a href="#">개인정보처리방침</a></p>
@@ -282,13 +284,13 @@
                     <p><a href="#">문의하기</a></p>
                 </li>
                 <li class="footer-company-info">
-                    <p class="company_ceo">대표이사 : 김수정</p>
-                    <p class="company_registration_number">사업자등록번호 : 000-00-00000</p>
-                    <p class="company_address">주소 : 경상북도 영주시 영주동</p>
+                    <p class="company_ceo">대표 : 김수정</p>
+                    <p class="company_registration_number">사업자등록번호 : 729-81-01394</p>
+                    <p class="company_address">주소 : 경산북도 영주시 광복로34</p>
                 </li>
                 <li class="footer-contact">
                     <p class="company_number">대표번호 : 054-632-1888</p>
-                    <p class="company_fax">FAX : 054-631-3717</p>
+                    <p class="company_fax">FAX : 054-635-3717</p>
                     <p class="company_email">이메일 : cocofa@naver.com</p>
                 </li>
                 <li class="footer-copyright">
@@ -298,12 +300,17 @@
         </div>
     </footer>
 
+    <!-- js -->
 
-
+    <!-- 기본 js 설정 -->
+    <script src="/assets/js/common.js"></script>
 
     <!-- 슬라이드 -->
-    <script src="/assets/js/slide.js"></script>
-    <script src="/assets/js/instagramSlide.js"></script>
+    <script src="/assets/js/slideHeader.js"></script>
+    <script src="/assets/js/slideinstagram.js"></script>
+
+    <!-- 문의하기 입력 값 검증 -->
+    <script src="/assets/js/sendEmail.js"></script>
 
     <!-- 스크롤 애니메이션 -->
     <!--      
@@ -313,8 +320,7 @@
     <script src="/assets/js/scroll.js"></script> 
     -->
 
-    <!-- 기본 js 설정 -->
-    <script src="/assets/js/common.js"></script>
+    
 
 
 </body>

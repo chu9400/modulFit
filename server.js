@@ -19,13 +19,10 @@ app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html');
 });
 
-app.get('/about/us', (request, response) => {
-    response.send("회사 소개 페이지 예정");
-});
+// app.get('/about/us', (request, response) => {
+//     response.send("회사 소개 페이지 예정");
+// });
 
-app.get('/about/produce', (request, response) => {
-    response.send("제작 소개 페이지 예정");
-});
 
 // 문의하기 기능
 app.post('/contact', (request, response) => {
@@ -33,33 +30,32 @@ app.post('/contact', (request, response) => {
 
     // Nodemailer 설정
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'naver',
         auth: {
-            user: 'chu9400@gmail.com',
-            pass: 'bpbu vsvp ebul vsrl'
+            user: 'chu9400@naver.com', // 작성 예정
+            pass: 'QCZMU4NZDG2F' // 작성 예정
         }
     });
 
     const mailOptions = {
-        from: 'chu9400@gmail.com',
-        to: 'chu9400@gmail.com',
-        subject: '문의하기 - 모듈핏',
-        text: `
-            이름: ${input_name}
-            이메일: ${input_email}
-            회사명: ${input_company}
-            휴대전화번호: ${input_phone}
-            문의사항: ${input_message}
+        from: 'chu9400@naver.com', // 작성 예정
+        to: 'chu9400@naver.com', // 작성 예정
+        subject: '모듈핏 - 문의드립니다.',
+        html: `
+            <p>이름: ${input_name}</p>
+            <p>이메일: ${input_email}</p>
+            <p>회사명: ${input_company}</p>
+            <p>휴대전화번호: ${input_phone}</p>
+            <p>문의사항:<br />${input_message}</p>
         `
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.log(error);
-            response.status(500).send('Error occurred while sending email');
+            response.status(500).send('Error : 문의를 보내지 못했습니다.');
         } else {
-            console.log('Email sent: ' + info.response);
-            response.send('문의사항이 성공적으로 발송되었습니다.');
+            response.sendFile(__dirname + '/index.html');
         }
     });
 });

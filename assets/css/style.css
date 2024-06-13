@@ -20,7 +20,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    max-width: 1980px;
+    max-width: 2560px;
     margin: 0 auto;
 }
 
@@ -94,7 +94,7 @@ body {
 
 .header_text {
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -116,7 +116,8 @@ body {
     
 }
 
-.header_text_btn p{
+.header_text_btn a{
+    display: block;
     width: 260px;
     height: 60px;
     font-size: 32px;
@@ -125,21 +126,26 @@ body {
     border-radius: 70px;
     margin: 0 auto;
     line-height: 62px;
+    color: white;
     
 }
 
 .header_slide {
-    padding: 20px;
-    bottom: 60px;
     position: relative;
-}
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    bottom: 9%;
+}   
 
 
 .slider__arrow {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    bottom: -30px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -149,51 +155,42 @@ body {
     text-decoration: none;
     font-size: 24px;
     padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* 세로 중앙 정렬 */
 }
 
 
 
 .slider__arrow a.left {
-    position: relative;
-    left: -270px;
+    left: 50%; /* 중앙 기준 위치 */
+    transform: translate(-600%, -50%); /* 중앙에서 왼쪽으로 20px 이동 */
 }
 
 .slider__arrow a.right {
-    position: relative;
-    right: -205px;
+    right: 50%; /* 중앙 기준 위치 */
+    transform: translate(600%, -50%) scaleX(-1); /* 중앙에서 오른쪽으로 20px 이동 및 좌우 반전 */
 }
 
 .slider__bar {
+    width: 100%;
+    max-width: 350px;
+    position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center; 
 }
 
 .slider__bar .bar {
-    width: 80px;
+    width: 100%;
+    max-width: 50px;
     height: 4px;
-    background-color: white;
-    margin: 0px;
-    transition: height 0.3s ease;
-    position: relative; /* 자식 요소 위치 조정을 위해 상대 위치 지정 */
-}
-
-
-/* 클릭 영역 확장 */
-.slider__bar .bar::before {
-    content: '';
-    position: absolute;
-    top: -10px; /* 클릭 영역 확장 높이 */
-    bottom: -10px; /* 클릭 영역 확장 높이 */
-    left: -10px; /* 클릭 영역 확장 너비 */
-    right: -10px; /* 클릭 영역 확장 너비 */
-    background: transparent; /* 배경색을 투명으로 설정하여 보이지 않도록 함 */
-    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 표시 */
+    background-color: gray;
 }
 
 
 .slider__bar .bar.active {
-    background-color: gray;
+    background-color: white;
 }
 /* header - end */
 
@@ -201,7 +198,7 @@ body {
 /* hero_section */
 .hero_section {
     width: 100%;
-    max-width: 1980px;
+    max-width: 2560px;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -241,7 +238,7 @@ body {
 /* about_us */
 .about_us {
     width: 100%;
-    max-width: 1980px;
+    max-width: 2560px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -261,13 +258,15 @@ body {
 .desc_wrap .desc_text_wrap {
     width: 50%; 
     background: whitesmoke;
-    padding: 200px 0; 
 }
 
 .desc_wrap .desc_text_wrap .desc_text {
     width: 100%;
-    max-width: 623px;
+    max-width: 500px;
     margin: 0 auto;
+    padding: 200px 0; 
+    height: 100%; /* 자식 높이를 부모 높이에 맞추도록 수정 */
+    box-sizing: border-box; /* 패딩 포함 높이 계산 */
 }
 
 .desc_wrap .desc_text_wrap .desc_text h2 {
@@ -281,6 +280,10 @@ body {
     font-size: 18px;
     line-height: 32px;
     padding: 20px 0;
+    letter-spacing: 0.5px;
+}
+.desc_wrap .desc_text_wrap .desc_text_02 span {
+    letter-spacing: 0;
 }
 
 
@@ -303,7 +306,7 @@ body {
 
 .instagram {
     width: 100%;
-    max-width: 1980px;
+    max-width: 2560px;
     height: 800px;
     position: relative;
     overflow: hidden;
@@ -392,16 +395,18 @@ body {
 
 .contact {
     width: 100%;
-    max-width: 1980px;
+    max-width: 2560px;
     height: 662px;
     margin: 0 auto;
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬을 위해 추가 */
+
 }
 
 .contact_wrap {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 150px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -424,15 +429,15 @@ body {
 .contact_wrap .contact_right {
     width: 45%;
     height: 422px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column; /* 수정: flexbox로 자식 요소 배치 */
-    justify-content: space-between; /* 수정: 자식 요소들이 공간을 적절히 나누도록 설정 */
+}
+
+.contact_wrap .contact_right .sendEmail{
+    width: 100%;
+    max-width: 415px;
 }
 
 .contact_wrap .contact_right ul {
-    width: 100%;
-    max-width: 415px;
+    
     list-style: none;
     padding: 0;
     margin: 0;
@@ -474,7 +479,7 @@ body {
 /* brand_vision */
 .brand_vision {
     width: 100%;
-    max-width: 1980px;
+    max-width: 2560px;
     height: 500px;
     margin: 0 auto;
     position: relative;
@@ -482,6 +487,8 @@ body {
     background-image: url("/assets/img/brand_vision/brand_vision_bg.gif");
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬을 위해 추가 */
 }
 
 .brand_vision div {
@@ -489,7 +496,6 @@ body {
     max-width: 630px;
     margin: 0 auto;
     text-align: center;
-    padding: 150px 0;
 }
 
 .brand_vision div h2{
@@ -506,18 +512,18 @@ body {
 
 footer {
     width: 100%;
-    max-width: 1980px;
+    max-width: 2560px;
     height: 318px;
     background-color: #332920;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 footer div {
     width: 100%;
     max-width: 1280px;
-    padding: 50px 0;
     margin: 0 auto;
-
 }
 
 footer ul {
@@ -526,9 +532,22 @@ footer ul {
 
 footer ul li{
     display: flex;
-    padding: 10px 0px;
+    padding-bottom: 20px;
     font-size: 16px;
 }
+
+footer .footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+footer .footer-logo span{
+    position: relative;
+    left: -7px;
+}
+
+
 
 .footer-links a{
     font-size: 16px;
@@ -537,7 +556,7 @@ footer ul li{
     margin-right: 30px;
 }
 .footer-company-info {
-    padding: 10px 0;
+    padding-bottom: 10px;
     
 }
 
@@ -563,8 +582,7 @@ footer ul li{
 }
 
 .footer-contact {
-    padding: 0;
-    padding-bottom: 10px;
+    
 }
 
 .footer-contact p{
@@ -591,8 +609,8 @@ footer ul li{
 
 
 
-
-.footer-copyright p{
+.footer-copyright {
+    padding: 0;
     font-size: 14px;
 }
 
@@ -603,7 +621,7 @@ footer ul li{
 /* 
 .scroll_section {
     width: 100%;
-    max-width: 1980px;
+    max-width: 2560px;
     height: 1280px;
     background-color: #999;    
 }
