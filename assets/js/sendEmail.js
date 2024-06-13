@@ -34,12 +34,19 @@ document.querySelector('#sendEmail').addEventListener('submit', function(event) 
     }
     
     // 휴대전화번호 검증
-    const phonePattern = /^[0-9]{9,}$/;
-    if (!phonePattern.test(input_phone.value)) {
-        alert("휴대전화번호는 숫자만 입력하셔야 합니다.");
+    if(input_phone.value.length < 8) {
+        alert("전화번호는 8글자 이상 입력하셔야 합니다.");
         input_phone.focus();
         return false;
     }
+
+    const phonePattern = /^[0-9]{8,}$/;
+    if (!phonePattern.test(input_phone.value)) {
+        alert("전화번호는 숫자만 입력하셔야 합니다.");
+        input_phone.focus();
+        return false;
+    }
+
     
     // 문의사항 검증
     if (input_message.value.trim().length < 5) {
@@ -55,6 +62,7 @@ document.querySelector('#sendEmail').addEventListener('submit', function(event) 
     input_message.value = sanitize(input_message.value);
     input_company.value = sanitize(input_company.value);
 
+    alert("고객님의 문의가 등록 되었습니다. 빠른 시일내에 답변 드리도록 하겠습니다.");
     // 폼 제출
     this.submit();
 });
