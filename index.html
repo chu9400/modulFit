@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>ModeulFit</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- 웹 폰트 적용되면 화면 표시 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.standalone.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const font = new FontFaceObserver('Pretendard-Regular');
+            font.load().then(() => {
+                document.documentElement.classList.add('fonts-loaded');
+            });
+        });
+    </script>
+
+
 </head>
 <body>
     <header class="header">

@@ -1,7 +1,8 @@
 /* main code*/
 @font-face {
     font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff2') format('woff2'), /* Modern browsers */
+         url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); /* Legacy support */
     font-weight: 400;
     font-style: normal;
 }
@@ -10,7 +11,12 @@
 /* body */
 body {
     overflow-x: hidden;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard-Regular', sans-serif;
+    display: none;
+}
+
+.fonts-loaded body {
+    display: block;
 }
 /* body - end*/
 
@@ -498,7 +504,6 @@ body {
 
 .brand_vision div {
     width: 100%;
-    max-width: 630px;
     margin: 0 auto;
     text-align: center;
 }
