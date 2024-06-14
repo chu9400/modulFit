@@ -32,14 +32,14 @@ app.post('/contact', (request, response) => {
     const transporter = nodemailer.createTransport({
         service: 'naver',
         auth: {
-            user: 'chu9400@naver.com', // 작성 예정
-            pass: 'QCZMU4NZDG2F' // 작성 예정
+            user: 'cocofa@naver.com',
+            pass: '7VERDY6UP613' // 네이버 애플리케이션 비밀번호
         }
     });
 
     const mailOptions = {
-        from: 'chu9400@naver.com', // 작성 예정
-        to: 'chu9400@naver.com', // 작성 예정
+        from: 'cocofa@naver.com',
+        to: 'cocofa@naver.com',
         subject: '모듈핏 - 문의드립니다.',
         html: `
             <p>이름: ${input_name}</p>
