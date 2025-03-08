@@ -14,6 +14,9 @@ body {
     font-family: 'Pretendard-Regular', sans-serif;
     display: none;
 }
+strong {
+    font-weight: bold;
+}
 
 .fonts-loaded body {
     display: block;
@@ -83,9 +86,26 @@ body {
 
 .header_menu a{
     color: white;
-
+}
+.header_menu .lang_toggle img {
+    position: relative;
+    left: 10px;
 }
 
+.header_menu .lang_btn {
+    position: relative;
+    top: 30px;
+    left: -62px;
+    opacity: 0;                /* 기본 상태는 보이지 않음 */
+    transition: opacity 0.3s ease; /* 부드러운 전환 효과 */
+    pointer-events: none;      /* 클릭 방지 (보이지 않을 때) */
+}
+
+/* active 클래스가 추가되면 ENG 보이게 처리 */
+.header_menu .lang_btn.active {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 .header_menu ul {
     display: flex;
@@ -392,11 +412,13 @@ body {
 
 
 .instagram_inner .instagram_arrow .instagram_arrow_left{
-    left: 13%;
+    /* left: 13%; */
+    left: 19%;
 }
 
 .instagram_inner .instagram_arrow .instagram_arrow_right{
-    right: 13%;
+    /* right: 13%; */
+    right: 19%;
     transform: rotate(180deg);    
 }
 /* instagram - end */
@@ -488,7 +510,7 @@ body {
 
 
 /* brand_vision */
-.brand_vision {
+/* .brand_vision {
     width: 100%;
     max-width: 2560px;
     height: 500px;
@@ -496,6 +518,21 @@ body {
     position: relative;
     overflow: hidden;
     background-image: url("/assets/img/brand_vision/brand_vision_bg.gif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; 
+} */
+
+.brand_vision {
+    width: 100%;
+    max-width: 2560px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /* background-image: url("/assets/img/brand_vision/brand_vision_bg.gif"); */
+    background-image: url("/assets/img/footer.gif");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -679,5 +716,3 @@ footer .footer-logo span{
 } 
 */
 /* scroll_section - end */
-
-
