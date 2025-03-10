@@ -39,7 +39,7 @@ function moveToSlide(slideIndex) {
 function startSlideInterval() {
     slideInterval = setInterval(() => {
         moveToSlide(currentSlide + 1);
-    }, 10000); // 10초마다 슬라이드 이동
+    }, 5000); // 5초마다 슬라이드 이동
 }
 
 function resetInterval() {

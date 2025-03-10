@@ -293,7 +293,7 @@ strong {
 
 .desc_wrap .desc_text_wrap .desc_text {
     width: 100%;
-    max-width: 500px;
+    max-width: 517px;
     margin: 0 auto;
     padding: 200px 0; 
     height: 100%; /* 자식 높이를 부모 높이에 맞추도록 수정 */
@@ -314,7 +314,7 @@ strong {
     letter-spacing: 0.5px;
 }
 .desc_wrap .desc_text_wrap .desc_text_02 span {
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
 }
 
 
