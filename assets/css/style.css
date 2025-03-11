@@ -293,7 +293,7 @@ strong {
 
 .desc_wrap .desc_text_wrap .desc_text {
     width: 100%;
-    max-width: 517px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 200px 0; 
     height: 100%; /* 자식 높이를 부모 높이에 맞추도록 수정 */
@@ -305,13 +305,14 @@ strong {
     font-weight: 700;
     line-height: 60px;
     padding: 20px 0;
+    letter-spacing: -0.4px;
 }
 
 .desc_wrap .desc_text_wrap .desc_text span {
     font-size: 18px;
     line-height: 32px;
     padding: 20px 0;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.4px;
 }
 .desc_wrap .desc_text_wrap .desc_text_02 span {
     letter-spacing: -0.5px;
@@ -457,7 +458,28 @@ strong {
 .contact_wrap .contact_left p {
     font-size: 20px;
     line-height: 30px;
+    padding: 20px 0;
 }
+
+.contact_wrap .contact_left ul {
+    width: 530px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_wrap .contact_left ul li{
+    width: 254px;
+    height: 64px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: solid 1px gray;
+}
+
+
 
 .contact_wrap .contact_right {
     width: 45%;
