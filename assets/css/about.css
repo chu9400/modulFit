@@ -469,7 +469,7 @@ footer .footer-logo {
 
 footer .footer-logo span{
     position: relative;
-    left: -7px;
+    padding-left: 16px;
 }
 
 

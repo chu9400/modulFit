@@ -1,10 +1,25 @@
 /* main code*/
+
+/* Pretendard  */
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff2') format('woff2'), /* Modern browsers */
          url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); /* Legacy support */
     font-weight: 400;
     font-style: normal;
+}
+
+/* Alata */
+@font-face {
+  font-family: 'Alata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/alata/v14/7Au9hZoS8JzBulWzmghvXESy.ttf') format('truetype');
+}
+
+.font_alata {
+    font-family: 'Alata', sans-serif;
 }
 
 
@@ -130,9 +145,10 @@ strong {
 }
 
 .header_text_title {
-    font-size: 80px;
+    font-size: 48px;
     padding: 20px;
     font-weight: 700;
+    line-height: 120%;
 }
 
 .header_text_desc {
@@ -230,7 +246,7 @@ strong {
 .hero_section {
     width: 100%;
     max-width: 2560px;
-    height: 500px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,7 +259,7 @@ strong {
 }
 
 .hero_section div span{
-    font-size: 15px;
+    font-size: 24px;
     color: #7C5C1C;
     font-weight: 700;
     padding: 20px;
@@ -257,8 +273,10 @@ strong {
 }
 
 .hero_section div p{
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-size: 18px;
-    line-height: 32px;
+    line-height: 24px;
+    padding-top: 20px;
 }
 
 
@@ -301,9 +319,9 @@ strong {
 }
 
 .desc_wrap .desc_text_wrap .desc_text h2 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 48px;
     padding: 20px 0;
     letter-spacing: -0.4px;
 }
@@ -377,7 +395,7 @@ strong {
 
 .instagram_inner .instagram_slider {
     overflow: hidden; /* 슬라이더 영역을 숨깁니다 */
-    max-width: 1300px; /* 최대 너비를 설정합니다 */
+    max-width: 1200px; /* 최대 너비를 설정합니다 */
     margin: 0 auto; /* 가운데 정렬 */
 }
 
@@ -401,9 +419,9 @@ strong {
 
 
 
-.instagram_inner .instagram_arrow {
-    
-}
+/* .instagram_inner .instagram_arrow {
+   
+} */
 
 
 .instagram_inner .instagram_arrow .instagram-link {
@@ -439,7 +457,7 @@ strong {
 
 .contact_wrap {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -609,11 +627,12 @@ footer .footer-logo {
     display: flex;
     align-items: center;
     font-size: 20px;
+    
 }
 
 footer .footer-logo span{
     position: relative;
-    left: -7px;
+    padding-left: 16px;
 }
 
 
@@ -650,9 +669,9 @@ footer .footer-logo span{
     display: none;
 }
 
-.footer-contact {
+/* .footer-contact {
     
-}
+} */
 
 .footer-contact p{
     margin-right: 20px;

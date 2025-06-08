@@ -15,31 +15,29 @@ app.listen(8001, () => {
     console.log('http://localhost:8001 서버 실행중');
 });
 
+
 // app.get('/about', (request, response) => {
 //     response.send("회사 소개 페이지 예정");
 // });
 
 // 한글 페이지지
-app.get('/', (request, response) => {
-    response.sendFile(__dirname + '/index.html');
+app.get('/ko', (request, response) => {
+    response.sendFile(__dirname + '/ko/index.html');
 });
 
-app.get('/about', (request, response) => {
-    response.sendFile(__dirname + '/about.html');
+app.get('/ko/about', (request, response) => {
+    response.sendFile(__dirname + '/ko/about.html');
 });
 
 
 // 영문 페이지
-app.get('/en/index', (request, response) => {
+app.get('/', (request, response) => {
     response.sendFile(__dirname + '/en/index.html');
 });
 
 app.get('/en/about', (request, response) => {
     response.sendFile(__dirname + '/en/about.html');
 });
-
-
-
 
 
 

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ModeulFit 소개 사이트입니다."/>
+    <meta name="keyword" content="ModeulFit, ModeulFit 소개" />
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>ModeulFit</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- 웹 폰트 적용되면 화면 표시 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.standalone.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const font = new FontFaceObserver('Pretendard-Regular');
+            font.load().then(() => {
+                document.documentElement.classList.add('fonts-loaded');
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="header_img">
+            <div class="slide">
+                <div class="slide_img">
+                    <img src="/assets/img/header/bg_img_00.gif" alt="헤더이미지 00">
+                </div>
+                <div class="slide_img">
+                    <img src="/assets/img/header/bg_img_01.gif" alt="헤더이미지 01">
+                </div>
+                <div class="slide_img">
+                    <img src="/assets/img/header/bg_img_02.gif" alt="헤더이미지 02">
+                </div>
+                <div class="slide_img">
+                    <img src="/assets/img/header/bg_img_03.gif" alt="헤더이미지 03">
+                </div>
+                <div class="slide_img">
+                    <img src="/assets/img/header/bg_img_04.gif" alt="헤더이미지 04">
+                </div>
+                <div class="slide_img">
+                    <img src="/assets/img/header/bg_img_05.gif" alt="헤더이미지 05">
+                </div>
+                
+            </div>
+        </div>
+        <div class="header_content">
+            <div class="header_menu">
+                <a href="/" class="header-logo">
+                    <img src="/assets/img/logo.svg" alt="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a href="/about">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#contact">문의하기</a>
+                    </li>
+                </ul>
+                <p>
+                    <a href="#" class="lang_toggle">
+                        KOR
+                        <img src="/assets/img/header/lang_arrow.png" class="lang_arrow" alt="lang_arrow">
+                    </a>
+                    
+                    <a href="/" class="lang_btn">ENG</a>
+                </p>
+            </div>
+            <div class="header_text">
+                <p class="header_text_title">모듈핏, 새로운 미래를 향한 열정</p>
+                <p class="header_text_desc">모듈핏(ModulFit)은 패션 산업과 공방 창업에 흥미를 느끼는 분들을 위한 플랫폼입니다.</p>
+                <div class="header_text_btn">
+                    <a href="/about">회사 소개</a>
+                </div>
+            </div>
+            <div class="header_slide">
+                <div class="slider__arrow">
+                    <a href="#" class="arrow-link left">
+                        <span class="ir">
+                            <img src="/assets/img/header/arrow_btn.svg" alt="left_btn">
+                        </span>
+                    </a>
+
+                    <a href="#" class="arrow-link right">
+                        <span class="ir">
+                            <img src="/assets/img/header/arrow_btn.svg" alt="right_btn">
+                        </span>
+                    </a>
+                    
+                </div>
+                <div class="slider__bar">
+                    <a href="#" class="bar active" data-slide="0"></a>
+                    <a href="#" class="bar" data-slide="1"></a>
+                    <a href="#" class="bar" data-slide="2"></a>
+                    <a href="#" class="bar" data-slide="3"></a>
+                    <a href="#" class="bar" data-slide="4"></a>
+                    <a href="#" class="bar" data-slide="5"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="hero_section" class="hero_section">
+            <div>
+                <span>Custom Clothing Pattern</span>
+                <h2>코코파, 패턴 제작의 시작</h2>
+                <p>
+                    모듈핏(ModulFit)은 패션 산업과 공방 창업에 흥미를 느끼는 분들을 위한 <br />
+                    플랫폼입니다. 우리는 소비자와의 소통을 중시하며, 교육과 지원을 통해 <br /> 
+                    사람들의 자기 발전을 돕고, 사회적 책임을 다하는 브랜드입니다.
+                </p>
+            </div>
+        </section>
+
+        <section id="about_us" class="about_us">
+
+            <div class="desc_wrap">
+                <div class="desc_text_wrap">
+                    <div class="desc_text desc_text_01">
+                        <h2>
+                            패션 디자인 교육 분야에서 <br />
+                            선두주자로 활동하고 있습니다.
+                        </h2>
+                        <span>
+                            저희의 주력 제품인 <strong>모듈핏(ModulFit)</strong>은 기본 패턴 블록을 간편하게 만들어주는 시작<br />
+                            키트입니다. 모듈핏은 패턴 제작의 진입 장벽을 낮춰주어 누구나 쉽고 빠르게 패턴 제작을<br />
+                            배울 수 있게 돕습니다. 모듈핏은 유연한 모듈 구조를 제공하여 사용자가 다양한 체형과<br />
+                            디자인에 맞춤형 패턴을 만들 수 있도록 합니다.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="desc_img_wrap">
+                    <img src="/assets//img/site_desc/site_desc_img_00.png" alt="desc img 00">
+                </div>
+            </div>
+
+            
+            <div class="desc_wrap reverse">
+                <div class="desc_text_wrap">
+                    <div class="desc_text desc_text_02">
+                        <h2>
+                            누구나 쉽고 빠르게 패턴 제작을 <br />
+                            배울 수 있게 돕습니다.
+                        </h2>
+                        <span>
+                            직관적이고 사용자 친화적인 접근 방식을 통해 시간과 비용을 절약할 수<br />
+                            있습니다. 코코파 주식회사의 미션은 패션 디자인 교육을 혁신하고 더 많은<br />
+                            사람들이 창의적인 패션 디자인을 실현할 수 있도록 하는 것입니다.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="desc_img_wrap">
+                    <img src="/assets//img/site_desc/site_desc_img_01.png" alt="desc img 01">
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section id="instagram" class="instagram">
+            <div class="instagram_inner">
+                <h2>INSTAGRAM</h2>
+                <div class="instagram_slider">
+                    <ul class="instagram_img_wrap">
+                        <li><img src="/assets/img/instagram/instagram_img_00.png" alt="instagram_img 00"></li>
+                        <li><img src="/assets/img/instagram/instagram_img_01.png" alt="instagram_img 01"></li>
+                        <li><img src="/assets/img/instagram/instagram_img_02.png" alt="instagram_img 02"></li>
+                        <li><img src="/assets/img/instagram/instagram_img_00.png" alt="instagram_img 00"></li>
+                        <li><img src="/assets/img/instagram/instagram_img_01.png" alt="instagram_img 01"></li>
+                        <li><img src="/assets/img/instagram/instagram_img_02.png" alt="instagram_img 02"></li>
+                    </ul>
+                </div>
+
+                <div class="instagram_arrow">
+                    <a href="#" class="instagram-link instagram_arrow_left">
+                        <span class="ir">
+                            <img src="/assets/img/instagram/instagram_arrow.svg" alt="instagram_arrow_left">
+                        </span>
+                    </a>
+        
+                    <a href="#" class="instagram-link instagram_arrow_right">
+                        <span class="ir">
+                            <img src="/assets/img/instagram/instagram_arrow.svg" alt="instagram_arrow_right">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+
+            <div class="contact_wrap">
+                <div class="contact_left">
+                    <h2>문의하기</h2>
+                    <p>
+                        모듈핏에 관해 궁금하신 내용을 편하게 문의해 주시면 빠른 시일 내에<br />
+                        연락드리겠습니다.
+                    </p>
+                    <ul>
+                        <li onclick="window.open('https://www.google.com', '_blank');">
+                            <img src="/assets/img/contact_bt_01.png" alt="contact_bt_01">
+                        </li>
+                        <li onclick="window.open('https://www.google.com', '_blank');">
+                            <img src="/assets/img/contact_bt_01.png" alt="contact_bt_01">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact_right">
+                    <form action="/contact" method="POST" id="sendEmail" class="sendEmail">
+                        <ul>
+                            <li><input type="text" class="input_name" name="input_name" placeholder="이름*" required /></li>
+                            <li><input type="text" class="input_email" name="input_email" placeholder="이메일 주소*" required /></li>
+                            <li><input type="text" class="input_company" name="input_company" placeholder="회사명" /></li>
+                            <li><input type="text" class="input_phone" name="input_phone" placeholder="휴대전화번호 (ex_01012345678)*" required /></li>
+                            <li><textarea class="input_message" name="input_message" placeholder="문의 사항"></textarea></li>
+                            <li><button type="submit">문의하기</button></li>
+                        </ul>
+                    </form>                    
+                </div>
+            </div>
+        </section>
+        
+        <section id="brand_vision" class="brand_vision">
+                <div>
+                    <h2>코코파: 패션의 미래를 위한 열정</h2>
+                    <p>
+                        우리는 소비자와의 소통을 중시하며, 교육과 지원을 통해 사람들의<br />
+                        자기 발전을 돕고, 사회적 책임을 다하는 브랜드입니다.
+                    </p>
+                </div>
+        </section>
+
+        <!-- 가로 스크롤 코드
+        <section id="scroll_section" class="scroll_section">
+            <div class="scroll_header">
+                <div class="scroll_header_left">
+                    <ul>
+                        <li>#ModulFit</li>
+                        <li>#HowToDesign</li>
+                    </ul>
+                </div>
+                <div class="scroll_header_right">
+                    <p>제작 바로가기 > </p>
+                </div>
+            </div>
+
+            <div class="scroll_body">
+                <div class="scroll_wrap">
+                    <article class="scroll_item s1">
+                        <img src="https://placehold.co/630x380" alt="스크롤 이미지 01" />
+                        <h3 class="num">01.</h3>
+                        <h2 class="title">준비 단계</h2>
+                        <p class="desc">
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                        </p>
+                    </article>
+
+                    <article class="scroll_item s2">
+                        <img src="https://placehold.co/630x380" alt="스크롤 이미지 02" />
+                        <h3 class="num">02.</h3>
+                        <h2 class="title">준비 단계</h2>
+                        <p class="desc">
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                        </p>
+                    </article>
+
+                    <article class="scroll_item s3">
+                        <img src="https://placehold.co/630x380" alt="스크롤 이미지 03" />
+                        <h3 class="num">02.</h3>
+                        <h2 class="title">준비 단계</h2>
+                        <p class="desc">
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                            단계별 제작 방법 등 설명을 작성해주세요.
+                        </p>
+                    </article>
+                
+            </div>
+            
+        </section> 
+    -->
+        
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li class="footer-logo">
+                    <img src="/assets/img/logo.svg" alt="logo">
+                    <span>코코파주식회사</span>
+                </li>
+                <li class="footer-links">
+                    <p><a href="#">사업자정보확인</a></p>
+                    <p><a href="#">개인정보처리방침</a></p>
+                    <p><a href="#">이메일무단수집거부</a></p>
+                    <p><a href="#contact">문의하기</a></p>
+                </li>
+                <li class="footer-company-info">
+                    <p class="company_ceo">대표 : 김수정</p>
+                    <p class="company_registration_number">사업자등록번호 : 729-81-01394</p>
+                    <p class="company_address">주소 : 경산북도 영주시 광복로34</p>
+                </li>
+                <li class="footer-contact">
+                    <p class="company_number">대표번호 : 054-632-1888</p>
+                    <p class="company_fax">FAX : 054-635-3717</p>
+                    <p class="company_email">이메일 : cocofa@naver.com</p>
+                </li>
+                <li class="footer-copyright">
+                    <p>ⓒ 2024 MODULFIT All Rights Reserved</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- js -->
+
+    <!-- 기본 js 설정 -->
+    <script src="/assets/js/common.js"></script>
+
+    <!-- 슬라이드 -->
+    <script src="/assets/js/slideHeader.js"></script>
+    <script src="/assets/js/slideinstagram.js"></script>
+
+    <!-- 문의하기 입력 값 검증 -->
+    <script src="/assets/js/sendEmail.js"></script>
+
+    <!-- 스크롤 애니메이션 -->
+    <!--      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="/assets/js/scroll.js"></script> 
+    -->
+
+    
+
+
+</body>
+</html>
