@@ -679,15 +679,21 @@ footer .footer-logo span{
     align-items: center;
 }
 
+/* 영문 페이지 footer-contact p::after 는 전부 제거 (display: none) */
 .footer-contact p::after {
+  content: none;
+}
+
+/* 한글 페이지에서 마지막 p를 제외한 모든 p에만 적용 */
+.footer-contact.footer-contact_ko p:not(:last-child)::after {
+    content: '';
+    display: block;
     width: 1px;
     height: 14px;
-    content: '';
     position: relative;
-    top: -0px;
+    top: 0;
     left: 10px;
     background-color: white;
-    display: block;
 }
 
 
